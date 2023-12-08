@@ -1,0 +1,12 @@
+<script>
+    const employee={
+        firstName:"rajesh",
+        age:33
+    }
+    Object.freeze(employee);
+    console.log(Object.isFrozen(employee))
+    employee.age = 56;
+    //age cannot be updated it is frozen now
+    console.log(employee);
+
+</script>

@@ -1,0 +1,30 @@
+Types of operator?
+1.Arithmetic operator 
+      //+,-,*,/,++,--
+2.comparison operator 
+      //!==,!=,<,>,<=,>-,==,===
+3.Logical operator 
+       //&&,||,!
+4.conditional operator 
+       condition?yes:no 
+=======================================
+Difference between == and === operator?
+//== It will check only value 
+//=== It will check value + datatype 
+'3' == 3 - true 
+'3' === 3 - false 
+=====================================
+String cancatenation 
+//By using + symbol two string will combine together 
+let result = "car" + "tata"
+//car tata 
+======================================================
+Typescasting are two ways
+//converting from one datatype to another datatype  
+1.implicit 
+   45 + hello = string type = 45hello 
+2.explicit 
+    Number("33")
+    String()
+    Boolean()
+================================================    

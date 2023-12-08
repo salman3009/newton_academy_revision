@@ -1,0 +1,185 @@
+How to Setup Express app
+1.create one new folder called express_project
+2.create one file inside this folder named app.js 
+3.open terminal and type "npm init"  to initialized package.json
+4.install the express app by typing in terminal: npm i expressjs
+5.Finally create the server and listen to it.
+const express = require('express');
+const app = express();
+app.listen(3000,()=>{
+    console.log("server is running on 3000");
+})
+
+Sending Data from frontend to backend using post method:
+//params 
+http://localhost:3000/45
+//query params - optional
+ http://localhost:3000?name=akash&location=bangalore
+//payload
+PAYLOAD={
+          "name":"akash"
+          "age":34,
+          "status":true,
+          "hobbies":[44,565,66],
+          "address":{
+                doorNo:"12"
+          },
+          salary:null
+}
+
+Backend if you need to access above data:
+params:
+      //req.params;
+query params:
+      //req.query 
+payload:
+      //req.body
+
+How will you parse the incoming data in nodejs?
+//we can use third party package called body-parser to parse the incoming data.
+//body-parser will convert into javascript object so easily we can use it in our application.
+
+Middleware:
+//Handling incoming request
+//Act in intermediate between request and response.
+//All incoming request need to pass each middleware for validation check,authentication check and authorization check .if anything fail it will revert back to frontend by sending error response.
+How to write middleware insid the expressjs 
+//app.use() method 
+//After doing everything just use next() method to proceed further.
+
+how to send html file from backend.
+//we need to use sendFile() from express to send the html file 
+
+what is serversiderendering
+//each html page will be serve from backend api
+//Reactjs also we can render it from backend;
+
+How to write mutiple middleware?
+//we can attach mutiple middleware inside the routing mechanism of express.
+
+How to make development easier for nodejs so that application restart automatically?
+//third package called nodemon 
+//whenever there is change in js file automatically it will updated.
+
+How to store global data inside the express app and how we can pass to another middleware or controller 
+//req is the global object we can pass any property here and we can able to access in any middelware or controller in that particular route.
+
+What is authentication process?
+//It is used to validate the user with credentials
+//User will first register the data with our application 
+//User after register they will try to login with credentials in our application
+//Once we pass the login details it will be validated in the backend and will send the success response to frontend.
+
+What is authorization process?
+//authorization process will start after login 
+//authorization will check whether login user have access for current action.
+//Each user will have different access depends upon the roles.
+
+How you will protected the api?
+//We need to add middelware in between the controller to protect the api 
+//Inside the middleware you can do validation check,token check etc.
+
+How you will create dynamic api?
+//By using params we can create dynamic api 
+//Depends upon params detials will fetch particular data from database.
+
+Which api method to fetch information
+GET Method 
+Which api to send details from frontend 
+POST Method 
+which api to update details 
+PATCH Method 
+Which api to delete details 
+DELETE Method 
+
+How you will store in environment file?
+//create .env file 
+//Install the package: npm i dotenv 
+//To access it : process.env
+//We can create multiple environment file so that easily we can connect to SIT,DEV,PREPROD,PROD 
+
+How will you read a data from file
+//we can inbuilt packgage 'fs' or 'fs/promises' to read file from local system.
+fs/promises - will work in async way 
+fs - will work both in sync and async 
+
+What type of file you can able to read inside the nodejs 
+//we can usually read txt file.
+//csv or excel we can use third party package to convert into json and after that we can able to read it 
+
+difference between dynamic api and static api 
+static api - serving static html files or fetching data from database without any condition. 
+dynamic api - send data depends upon params or query params
+
+what is routing in backend?
+//When application becomes very large it will be difficuilt to read all codes in one single function
+//Routing helps to segregate into different controller for each api request 
+//It helps code readable and maintability
+//we can use express router to setup it
+
+What is MVC pattern?
+M - Model - Schema structure
+V - View - html files  
+C - Controller - business logic (database call,validation,auth check)
+
+What is Database?
+1.It is an information store permanently inside the hard disk.
+2.It play very important role for entire application information 
+3.We have two approach to access database 
+      1.SQL - structure query language ( relations) - Oracle,mssqlserver
+      2.NoSQL - No structure query language( no relations) - mongodb,couchdb 
+
+ACID - SQL
+Atomicity - each transaction insid the table should complete entire process otherwise data should be rollback
+Consistency  - all table will have sync data.
+Isolation-multiple transactions will happen concurrently but separately.
+Durability - Even in the case of hardware or software is failed still data will be available
+
+CAP NOSQL
+Consistency
+availability 
+partition tolerance - If you do veritcal scaling then dividing the data equally to each machine easily taken care by mongodb.      
+
+SQL vs NoSQL 
+Table - collections 
+records - documents 
+primary key - primary key 
+foreign key - no foreign key 
+
+What is documents in mongodb 
+//It is similar to javascript object 
+//It consists of following datatype:string,number,boolean,date,array,object,null 
+//We can have multiple documents inside each collections.
+
+How to find unique element inside the mongodb?
+primarykey:
+1.It is unique key created for all the documents 
+2.It is created by database default 
+3._id will be created 
+
+Benefits of Mongodb or NOSQL
+//There is no datatype restriction 
+//There is no restriction to remove property or to add the property
+//There is no restriction to follow similar pattern 
+//Mongodb is easy to use 
+//Easy to deploy 
+//Easy to learn 
+//cost cutting 
+//performance is also good 
+//Driver is supported in latest technology in nodejs 
+//vertical scaling 
+
+What is ODM?
+ODM - Object Data modelling 
+Nodejs--->expressjs--->Mongoos(ODM)-->Mongodb 
+Mongoose
+//Provide proper datatype then only it will insert inside the database 
+//Provide property name 
+//Provide similar pattern of data 
+//Schema creation is done 
+//validation we can able to do (required,min,max,pattern,email)
+
+By using Mongoose you are making similar to SQL then what is the benefits?
+//There is no multiple tables like in sql to access we need to join all table together
+//By using single document we can able to fetch all at a time. So it will improve the performance.
+

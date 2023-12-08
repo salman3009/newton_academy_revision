@@ -1,0 +1,102 @@
+MERN
+M - Mongodb (Database)
+E - Expressjs (framework of Nodejs)
+R - Reactjs (library of javascript)
+N - Nodejs (run environment for javascript)
+
+Purpose of Backend language:
+1.it should support file system 
+2.it should interact with database system 
+3.it should support network system 
+4.it should interact with os 
+
+Nodejs and chrome browser using same engine called (v8)
+
+Nodejs architecture - (first 5 points)
+1.Single thread (process in execution)
+2.stack - all primitive types and function will called here - (LIFO)
+3.queue - all async code will get store here - (FIFO)
+4.heap - array and object will get store
+5.event loop - taking care of request and response - It is running infinitely.
+6.web api - is only in browser 
+7.internal thread pool - is only available in nodejs 
+
+Core package Inside the Nodejs 
+1.fs - You can access file system 
+2.os - You can operating system
+3.path - you can access file path 
+4.http - get and post api call, you can create web server 
+
+How to import files:
+1.import/export - async in nature - Babel package - lower version of javascript
+2.require - sync in nature
+
+What is Event Emitter 
+//It consists of two process 
+     1.triggering event - (whenever data is available or data is ready);
+     2.listenining to that event and returning response.
+//all the code is written async in nature.   
+
+How to json to javascript and javascript to json?
+Frontend we need to send JSON 
+Backend we need javascript object 
+JSON convert into javascript object - JSON.parse()
+javascript object into JSON - JSON.stringify()
+
+http method:
+HTTP - hyper text transfer protocol
+1.html,css,javascript,json,image,video is supported to send from backend to frontend 
+2.please practice the code of http server creation without help of expressjs 
+3.HTTP method structure:
+Header portion - ALL METHODS HAVE HEADER PORTION
+   1.content-type 
+   2.url 
+       //params 
+               http://localhost:3000/45
+       //query params - optional
+                 http://localhost:3000?name=akash&location=bangalore
+   3.ip address 
+   4.custom headers - jwt token 
+Body portion  - ONLY POST,DELETE,PATCH WILL HAVE BODY PORTION 
+        PAYLOAD={
+          "name":"akash"
+          "age":34,
+          "status":true,
+          "hobbies":[44,565,66],
+          "address":{
+                doorNo:"12"
+          },
+          salary:null
+        }
+
+4.List of http Methods:
+GET - get the information 
+POST - payload will send inside the body part 
+PATCH 
+DELETE
+
+5.Status code http methods 
+200 or 300 - success 
+400 or 500 - error 
+
+What is expressjs?
+//It is a third party framework for nodejs 
+Benefits:
+1.east to write restapi
+2.routing setup we can done in easy way 
+3.template engine support - (handlebars-expresshandlebars)
+4.error handling - middleware 
+5.middleware support 
+
+
+To setup the backend project.
+1.First we need package.json file.
+     //it is configuration file particular for javascript project 
+           //packages you have install 
+           //how to generate test case
+           //how to generate production code 
+           //version and name of project 
+           //script command helps to run code/test/production.
+Creating package.json file 
+cmd:npm init   
+=============================================================

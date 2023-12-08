@@ -1,0 +1,24 @@
+<script>
+    //global scope
+    let globalResult = 22;
+    
+    function display(){
+        console.log(globalResult);
+
+        //function scope
+        let functionResult = 44;
+
+        globalResult = 23;
+        console.log(functionResult);
+    }
+    display();
+
+    {
+        console.log(globalResult);
+
+        //block scope or local scope variable
+        let address = "Chennai";
+       
+        console.log(address);
+    }
+</script>

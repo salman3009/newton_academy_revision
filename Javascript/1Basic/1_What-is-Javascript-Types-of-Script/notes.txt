@@ -1,0 +1,24 @@
+What is javascript?
+1.It is dynamic language in web browser 
+2.It will work as combination with html,css 
+3.All browser as javascript compiler inbuilt present in it 
+4.If you want to run javascript outside the browser you need to have nodejs
+5.client side scripting 
+6.interpreted language (line by line execution)
+7.open source - (MIT license anyone can use it)
+8.cross-platform (in any operating system it will run)
+9.case sensitive (there is difference between capital and small letter)
+10.Chrome browser(V8 Engine)
+============================================================
+Javascript you can write in two ways:
+1.internal --->Inside the html file itself 
+//you can use multiple script tag inside the html file. 
+//Anywhere inside the html tag we can write either in head tag or body tag.
+<script>
+</script>
+2.external ---> We are going to create separate .js file 
+//in html we need to import their file location 
+//It is more preferred way because html and css are in separate file 
+//It will make code maintainability.
+//Anywhere inside the html tag we can write either in head tag or body tag.
+==============================================================================
