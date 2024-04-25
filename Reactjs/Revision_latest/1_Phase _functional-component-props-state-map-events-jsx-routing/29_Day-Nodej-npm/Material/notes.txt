@@ -9,9 +9,10 @@ Project run: npm start  or npm run start
 ============================================
 package.json --> all javascript project you will have package.json 
 //package we have used in our project 
+========================================
 //how to start the project 
 //how to build project 
-node-modules - folder where all package will be present.
+node-modules - folder where all packagess will be present.
 ============================================
 SPA - Single page application 
 react is spa 
@@ -47,7 +48,6 @@ syntax:
 function App(){
 
 }
-
 export default App;
 JSX - extension of javascript
 if we use html inside the javascript is called jsx 

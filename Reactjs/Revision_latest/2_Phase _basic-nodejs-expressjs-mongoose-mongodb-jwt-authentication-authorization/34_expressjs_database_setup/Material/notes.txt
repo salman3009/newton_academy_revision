@@ -8,14 +8,6 @@ Frontend and backend will interact by using json
 Nodejs and npm 
 npm - json-server - mock-data 
 postman - to check backend api is working or not 
-====================
-backend setup:
-1.open cmd: npm install -g json-server
-2.Unzip the backend folder 
-3.install the postman 
-4.open the json collection in postman 
-5.run the backend 
-json-server --watch db.json
 =========================================
 authentication --> login/register 
 authorization --> only your data you can able to see 

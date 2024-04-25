@@ -9,7 +9,7 @@ Types
 5.useMemo 
 6.useRef 
 7.useContext  - 3
-8.useNavigate
+
 
 1.useState - it helps to maintain state inside the functional component and it will return 
 two arguments. 1.latest state data 2.to update the state data.
@@ -31,5 +31,3 @@ if we have different condition for state update we can use useReducer instead of
 (i)Provider - provider will provide data to the props.
 (ii)Consumer - consumer will consume the data from props.
 
-8.useNavigate - it is used to navigate from one component to another component by using 
-react-router.
