@@ -1,0 +1,33 @@
+Reactjs:
+//any image and icon you need to display means we have to import that in react application.
+//With react application you can write without bootstrap as well.
+Routing:
+Step1:
+cmd:npm install react-router-dom 
+step2:
+App.js 
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+function App() {
+  return (
+   <div>
+     <BrowserRouter>
+     <Header/>
+     <Routes>
+     <Route path="" element={<Register/>}></Route>
+     <Route path="login" element={<Login/>}></Route>
+     </Routes>
+     </BrowserRouter>
+    </div>
+  );
+}
+===============================================
+//whever you need link to navigate
+//Use "Link" package from react-router-dom 
+
+export default App;
+=========================================
+image and icon taken from assets folder we need to import .
+real time url direclty you can use it for image and icon.
+==========================================
+import {Link} from 'react-router-dom';
+  <Link className="nav-link" to="about">About</Link>

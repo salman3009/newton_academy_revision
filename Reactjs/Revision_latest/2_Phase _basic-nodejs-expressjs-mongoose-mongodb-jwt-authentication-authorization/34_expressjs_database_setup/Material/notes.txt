@@ -1,0 +1,24 @@
+RESTAPI - Representational state transfer
+http method - Will bring html/css/js/json 
+      1.get  - we can send data only in url
+      2.post  -  we can send data  in url and body (new data)
+      3.put  - we can send data  in url and body (update data)
+      4.delete  -  we can send data only in url
+Frontend and backend will interact by using json 
+Nodejs and npm 
+npm - json-server - mock-data 
+postman - to check backend api is working or not 
+====================
+backend setup:
+1.open cmd: npm install -g json-server
+2.Unzip the backend folder 
+3.install the postman 
+4.open the json collection in postman 
+5.run the backend 
+json-server --watch db.json
+=========================================
+authentication --> login/register 
+authorization --> only your data you can able to see 
+========================
+Restapi integration we need to use third party axios package.
+=========================================

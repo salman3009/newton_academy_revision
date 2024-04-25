@@ -1,0 +1,35 @@
+Types of Hooks in functional component:
+1.hooks concept is available from react version 16.9 (2019).
+2.hooks will support only in functional component not in class component.
+Types 
+1.useState   - 1
+2.useReducer 
+3.useEffect   - 2
+4.useCallback
+5.useMemo 
+6.useRef 
+7.useContext  - 3
+8.useNavigate
+
+1.useState - it helps to maintain state inside the functional component and it will return 
+two arguments. 1.latest state data 2.to update the state data.
+Example:
+const [getList,setList]=useState("0");
+
+2.useReducer - it also helps to maintain the state inside the functional component. 
+if we have different condition for state update we can use useReducer instead of useState.
+
+3.useEffect - it is an cycle life phase in functional component 
+
+4.useCallback - Mainly for performance. it is use to avoid rendering of duplicate component again and again.
+
+5.useMemo - Mainly for performance. it is help to store cache data. No need to recalculate the existing logic.
+
+6.useRef - It is use to access the DOM manipulation directly and it is safe to use instead using javascript DOM methods.
+
+7.useContext  - It is use to avoid drilling of props to nested components.
+(i)Provider - provider will provide data to the props.
+(ii)Consumer - consumer will consume the data from props.
+
+8.useNavigate - it is used to navigate from one component to another component by using 
+react-router.

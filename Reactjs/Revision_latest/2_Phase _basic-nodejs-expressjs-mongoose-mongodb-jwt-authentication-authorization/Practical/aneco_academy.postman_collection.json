@@ -1,0 +1,195 @@
+{
+	"variables": [],
+	"info": {
+		"name": "aneco_academy",
+		"_postman_id": "cdde59d8-7801-dbf1-ebac-2b6f09134ef6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"url": "http://localhost:8080/api/user/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\":\"salman\",\n    \"email\": \"salman@gmail.com\",\n    \"password\":\"12345\",\n    \"roles\":\"admin\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"url": "http://localhost:8080/api/user/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"salman@gmail.com\",\n    \"password\":\"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "createProduct",
+			"request": {
+				"url": "http://localhost:8080/api/product/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE",
+						"description": ""
+					},
+					{
+						"key": "email",
+						"value": "salman@gmail.com",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"productName\":\"whirlpool\",\n   \"price\":5000,\n   \"discount\":true,\n   \"discountPrice\":200,\n   \"stock\":40\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"url": "http://localhost:8080/api/product/list/64a78e2ab4390ca5c2fba0fd",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE",
+						"description": ""
+					},
+					{
+						"key": "email",
+						"value": "salman@gmail.com",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"price\":8000\n   \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"url": "http://localhost:8080/api/product/list/64a78d7ab4390ca5c2fba0f7",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE",
+						"description": ""
+					},
+					{
+						"key": "email",
+						"value": "salman@gmail.com",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"productName\":\"whirlpool\",\n   \"price\":5000,\n   \"discount\":true,\n   \"discountPrice\":200,\n   \"stock\":40\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"url": "http://localhost:8080/api/product/list",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2ODg3MDIyMDgsImV4cCI6MTY4ODcwNTgwOH0.qk_A7tAfNitGIn6ciSYi7uWqjxE4UrNkVfgcr8JyKEE",
+						"description": ""
+					},
+					{
+						"key": "email",
+						"value": "salman@gmail.com",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"productName\":\"LG\",\n   \"price\":4000,\n   \"discount\":true,\n   \"discountPrice\":1000,\n   \"stock\":24\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

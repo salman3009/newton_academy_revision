@@ -1,0 +1,56 @@
+Reactjs
+1.funtional component - latest 
+2.class component - old version 
+=================================
+class component  - code is lengthy
+class component - more concept.
+==================================
+import {Component} from react;
+
+class FormInput extends Component{
+
+    constructor(props){
+	   super(props);
+	   this.state={
+	     display:"string"
+	   };
+	}
+	
+	render(){
+	   return()
+	}
+
+}
+
+//you can have only one state variable and inside that you can declare multiple values.
+
+//render method we need to use it for return 
+
+Inbuilt methods: (normal method)
+1.constructor
+2.render 
+3.shouldComponentUpdate - to get update state everytime.please return true here.
+
+other methods:
+1.any custom method please write using arrow method.
+
+======================================
+Accessing state and props and methods 
+//please use the this keyword 
+To update the state:
+//please use setState method and which property you need to update please update that particular property only.
+============================================
+class component and functional component 
+Both can be used together:
+Initial Days:
+1.whenever they have state they will use class component. react hooks is not present at that time.
+2.whenver they have stateless component they will use functional component
+3.react hooks is present from 16.9 onwards
+==========================================
+Lifecyclhooks:
+useEffect(()=>{},[]) --> only one time during initial rendering 
+componentDidMount()--->only one time during initial rendering 
+==============================================
+useEffect(()=>{},[state]) -->whenever state changes happen it will call this event 
+shouldComponentUpdate()-->whenever state changes happen it will call this event
+===============================================

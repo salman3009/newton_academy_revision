@@ -1,0 +1,56 @@
+Nodejs - running javascript outside the browser 
+npm - node package manager (it is use to install the packages)
+========================================
+https://reactjs.org/docs/create-a-new-react-app.html
+cmd:
+npx create-react-app my-app
+==============================================
+Project run: npm start  or npm run start 
+============================================
+package.json --> all javascript project you will have package.json 
+//package we have used in our project 
+//how to start the project 
+//how to build project 
+node-modules - folder where all package will be present.
+============================================
+SPA - Single page application 
+react is spa 
+===================================
+.js 
+.css 
+.test.js --->testing file 
+===================================
+react inside the js file itself will return the html.
+==============================================
+To stop the react application - Ctrl+c 
+==============================================
+NOtes:
+npx create-react-app project-name 
+scripts:
+npm run start or npm start 
+npm run build
+npm run test 
+=================================
+SPA - Single page application:
+//Entire website is build on singe html file.Depend upon user action will change the component structure.
+best example:gmail.
+====================================
+public/index.html --->index.js --> App.js 
+===================================
+index.css
+app.css 
+app.js 
+=====================================
+React is developed using component structure 
+component is nothing but one function
+syntax:
+function App(){
+
+}
+
+export default App;
+JSX - extension of javascript
+if we use html inside the javascript is called jsx 
+jsx is supported only in reactjs 
+=========================================
+
